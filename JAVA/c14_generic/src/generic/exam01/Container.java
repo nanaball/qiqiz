@@ -1,28 +1,16 @@
 package generic.exam01;
 
-public class Container<K,V>{
+public class Container<T>{
 
-	private K key;
-	private V value;
+	private T t;
 	
-	public K getKey() {
-		return key;
-	}
-	public void setKey(K key) {
-		this.key = key;
-	}
-	public V getValue() {
-		return value;
-	}
-	public void setValue(V value) {
-		this.value = value;
+	public void set(T t) {
+		this.t = t;
 	}
 	
-	@Override
-	public String toString() {
-		return "Container [key=" + key + ", value=" + value + "]";
+	public T get() {
+		return t;
 	}
-	
 	
 	
 }

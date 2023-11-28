@@ -3,7 +3,7 @@ package generic.exam04;
 public class UtilExample {
 	public static void main(String[] args) {
 		Pair<String, Integer> pair = new Pair<>("최기근", 35);
-		Integer age = Util.getValue(pair, "최기근");
+		Integer age = Util.<String,Integer>getValue(pair, "최기근");
 		System.out.println(pair.getKey() +" : "+age);
 		
 		ChildPair<String, Integer> childPair = new ChildPair<>("김기근", 20);

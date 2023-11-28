@@ -1,6 +1,6 @@
 package generic.exam01;
 
-public class ContainerExample<K,V> {
+public class ContainerExample {
 	
 	public static void main(String[] args) {
 		
@@ -15,4 +15,5 @@ public class ContainerExample<K,V> {
 		System.out.println(value);
 	}
 }
+
 
