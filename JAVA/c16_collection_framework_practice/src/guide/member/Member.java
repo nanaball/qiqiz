@@ -102,8 +102,11 @@ public class Member {
 	 * 인식할 수 있도록 재정의 
 	 */
 	
-	@Override
-	public boolean equals(Object o) {
+	public boolean equals(Member newMember) {
+		if(newMember == null) return false;
+		if(this.mId.equals(newMember.mId) && this.mPw.equals(newMember.mPw)) {
+			return true;
+		}
 		return false;
 	}
 
